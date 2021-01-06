@@ -1,4 +1,4 @@
-package com.exemple.entity;
+package com.exemple.repository;
 
 import com.exemple.entity.ThemeParkRide;
 import org.springframework.data.repository.CrudRepository;
