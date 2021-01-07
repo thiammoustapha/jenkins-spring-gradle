@@ -48,14 +48,3 @@ dockerRun {
     ports '8080:8080'
     clean true
 }
-
-cloudFormation {
-    stackName "$project.name-stack"
-    stackParams([
-            SubnetID: findProperty('subnetId') ?: '',
-            ServiceName: project.name,
-            ServiceVersion: project.version,
-            DockerHubUsername: dockerHubUsernameProperty
-    ])
-    templateFile project.file("ecs.yml")
-}
