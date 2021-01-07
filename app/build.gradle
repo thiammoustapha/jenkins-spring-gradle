@@ -28,4 +28,4 @@ test {
     useJUnitPlatform()
 }
 
-project.version = scmVersion.version
+project.version = scmVersion.version 
